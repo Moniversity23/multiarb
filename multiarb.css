@@ -1,98 +1,162 @@
+/* General Body Styling */
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to bottom, #099bf0, #1e88e5);
     margin: 0;
     padding: 0;
-    background-color: #1a1a1a;
-    color: #f0f0f0;
-}
-
-.container {
-    max-width: 460px;
+    color: #ffffff;
+  }
+  
+  /* Container Styling */
+  .container {
+    max-width: 900px;
     margin: 20px auto;
-    background: #4a90e2;
-    padding: 45px;
+    background: #1e1e2f;
+    padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 0 30px rgba(247, 169, 2, 0.2);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    color: #ffffff;
+  }
+  
+  /* Header Styling */
+  h1, h2 {
     text-align: center;
-}
-
-h1 {
-    color: #fff;
+    color: #f3e5ab;
     margin-bottom: 20px;
-    font-size: 2em;
-    letter-spacing: 1px;
-}
-
-form label {
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+  }
+  
+  h2 {
+    font-size: 1.8rem;
+  }
+  
+  /* Form Styling */
+  form {
+    margin-bottom: 20px;
+  }
+  
+  label {
     display: block;
-    margin: 12px 0;
-    font-size: 1.1em;
-    color: #ddd;
-}
-
-input {
-    padding: 12px;
-    width: calc(100% - 24px);
-    margin-top: 8px;
-    border: 2px solid #f3d7a4d3;
-    border-radius: 8px;
-    background-color: #333;
-    color: #fff;
-}
-
-input:focus {
-    outline: none;
-    border-color: #4a90e2;
-    background-color: #444;
-}
-
-button {
-    padding: 12px;
-    background: #f5a623;
-    color: white;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    margin: 15px 5px 0 0;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #c9bbdf;
+  }
+  
+  input[type="text"],
+  input[type="number"] {
     width: 100%;
-    font-size: 1.1em;
-    transition: background 0.3s ease;
-}
-
-button:hover {
-    background: #d88c21;
-}
-
-.result-item {
-    margin-top: 20px;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    background: #2a2a3b;
+    color: #ffffff;
+    box-sizing: border-box;
+    font-size: 1rem;
+  }
+  
+  input::placeholder {
+    color: #bbb;
+  }
+  
+  button {
+    width: 100%;
     padding: 12px;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    background-color: #2c3e50;
-    color: #fff;
-}
-
-.result-item:nth-child(odd) {
-    background-color: #34495e;
-}
-
-.result-item.highlight {
-    background-color: #27ae60;
-    border-color: #1e8449;
-}
-
-@media (max-width: 768px) {
+    margin-top: 10px;
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+    transform: scale(1.03);
+  }
+  
+  /* Game Section Styling */
+  .game {
+    background: #3c3c5c;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 15px;
+  }
+  
+  /* Results Section Styling */
+  #results {
+    margin-top: 20px;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #2a2a3b;
+    color: #ffffff;
+  }
+  
+  table, th, td {
+    border: 1px solid #ccc;
+  }
+  
+  th, td {
+    padding: 12px;
+    text-align: center;
+  }
+  
+  thead {
+    background-color: #6200ff;
+  }
+  
+  th {
+    font-weight: bold;
+  }
+  
+  td {
+    font-size: 0.9rem;
+  }
+  
+  #summary {
+    margin-top: 15px;
+    font-size: 1rem;
+    text-align: center;
+    color: #f3e5ab;
+    font-weight: bold;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
     .container {
-        padding: 30px;
+      padding: 15px;
     }
-
-    input,
+  
+    h1 {
+      font-size: 2rem;
+    }
+  
+    h2 {
+      font-size: 1.5rem;
+    }
+  
     button {
-        width: 100%;
-        margin-bottom: 15px;
+      font-size: 0.9rem;
+      padding: 10px;
     }
-
-    button {
-        margin-top: 10px;
+  
+    th, td {
+      padding: 10px;
+      font-size: 0.8rem;
     }
-}
+  
+    input[type="text"],
+    input[type="number"] {
+      font-size: 0.9rem;
+    }
+  }
+  
